@@ -24,10 +24,7 @@ public:
         int n = obstacleGrid[0].size();
 
         int dp[m][n];
-        memset(dp, 0, sizeof(int) * n);
-        for (int i = 0; i < m; i++) {
-            memset(dp[i], 0, sizeof(int) * n);
-        }
+        memset(dp, 0, sizeof(int) * m * n);
 
         if (obstacleGrid[0][0] == 1 || obstacleGrid[m - 1][n - 1] == 1) return 0;
 

@@ -21,10 +21,7 @@ class Solution {
 public:
     int uniquePaths(int m, int n) {
         int dp[m][n];
-        memset(dp, 0, sizeof(int) * n);
-        for (int i = 0; i < m; i++) {
-            memset(dp[i], 0, sizeof(int) * n);
-        }
+        memset(dp, 0, sizeof(int) * m * n);
 
         dp[0][0] = 1;
         for (int y = 1; y < m; y++) {
